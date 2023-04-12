@@ -12,3 +12,30 @@ GROUP BY
     MONTH(t.[Trip Start Timestamp]), YEAR(t.[Trip Start Timestamp]), t.[Company]
 ORDER BY
     COUNT DESC;
+
+
+  /* Optimized Query */
+
+SELECT
+    tmp.year,
+    tmp.month,
+    tmp.count,
+    tmp.Company
+FROM 
+    (
+    SELECT 
+        YEAR([Trip Start Timestamp]) AS year,
+        MONTH([Trip Start Timestamp]) AS month,
+        COUNT(1) AS COUNT,
+        [Company]
+    FROM 
+        dbo.TaxiTrips
+    GROUP BY 
+        MONTH([Trip Start Timestamp]),
+        YEAR([Trip Start Timestamp]),
+        [Company]  
+    ) tmp
+WHERE
+    tmp.year = 2019
+ORDER BY
+    COUNT DESC;
