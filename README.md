@@ -2,8 +2,7 @@
 
 ## Dataset Source
 
-- Taxi Trips | City of Chicago
-- https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew/data
+- [Taxi Trips | City of Chicago](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew/data)
 
 ## Export CSV file
 
