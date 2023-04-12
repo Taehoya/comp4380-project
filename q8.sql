@@ -1,5 +1,5 @@
 /* Query 8 */
-
+ 
 SELECT 
   [Pickup Centroid Latitude], [Pickup Centroid Longitude], SUM(Tips)/count(1) AS average
 FROM 
