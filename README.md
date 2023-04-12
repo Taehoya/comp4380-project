@@ -60,3 +60,8 @@ WITH (
         , rowterminator = '0x0a'
         );
 ```
+
+# Queries
+The SQL files for the queries used are all located inside the _queries_ folder, linked [here](https://github.com/Taehoya/comp4380-project/tree/main/queries). The files are labeled according to the query they contain. 
+Files for queries with code optimizations contain both the original query and the optimized query.
+
