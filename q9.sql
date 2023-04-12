@@ -15,3 +15,19 @@ AND
   [Payment Type] = 'Mobile' 
 AND 
   [Trip Seconds] > 1800);
+  
+  /* Optimized Query */
+  
+SELECT * 
+FROM 
+  dbo.taxiTrips 
+WHERE 
+  (
+      [Company] = 'City Service' 
+  OR 
+      [Company] = 'Sun Taxi'
+  ) 
+AND 
+  ([Payment Type] = 'Mobile') 
+AND
+  ([Trip Seconds] > 1800);
