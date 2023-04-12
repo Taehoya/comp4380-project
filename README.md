@@ -1,4 +1,4 @@
-# COMP4380 Project
+# COMP4380 Group 2 Project
 
 ## Dataset Source
 
