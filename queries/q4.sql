@@ -1,7 +1,7 @@
 /* Query 4 */
 
 SELECT 
-    [Company]) AS [Company Name], 
+    [Company] AS [Company Name], 
     COUNT([Trip Total]) AS [# of Trips costing $1000+] 
 FROM 
     dbo.taxiTrips 
